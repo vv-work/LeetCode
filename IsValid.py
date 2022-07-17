@@ -6,7 +6,6 @@ def isValid( s: str) -> bool:
         else :
             if(len(stack)<1):
                 return False
-
             o = stack.pop()
             if c == '}' and o!='{':
                 return False
@@ -14,8 +13,6 @@ def isValid( s: str) -> bool:
                 return False
             if c == ']' and o!='[':
                 return False
-
-
     return len(stack) ==0
 
 print("Should be True")
