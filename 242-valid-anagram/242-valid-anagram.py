@@ -6,7 +6,6 @@ class Solution:
                 dicS[c] = dicS[c]+1
             else:
                 dicS[c] = 1
-
         for c in t:
             if c in dicS:
                 dicS[c] = dicS[c]-1
@@ -16,5 +15,4 @@ class Solution:
                 return False
         if(len(dicS)>0):
             return False
-
         return True
